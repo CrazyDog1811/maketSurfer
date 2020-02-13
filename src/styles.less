@@ -1,0 +1,190 @@
+@import "variables.less";
+@font-face {
+ font-family: 'Myriad Pro';
+ src: url(../fonts/Myriad-Pro-Bold_31631.ttf);   
+}
+@font-face {
+    font-family: 'HelveticaLTStd';
+    src: url(../fonts/HelveticaLTStd-Bold.otf);
+}
+body {
+   font-family: 'Myriad Pro';
+    background: url(../images/back.png);
+  
+   padding: 0;
+}
+.container {
+    position: relative;
+    background: rgba(176, 93, 0, 0.7);
+width: 100%;
+img {
+    display: block;
+    width: 90%;
+    margin: auto;
+    z-index: -1;
+}
+h1 {
+    position: absolute;
+    top: 40px;
+    right: 33%;
+    transform: rotate(-5deg);
+    font-size: 82px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 5px 5px 5px #383838;
+   
+}
+h2 {
+    position: absolute;
+    top: 130px;
+    right: 0px;
+    width: 45%;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #008ece;
+    transform: rotate(-5deg);
+    text-align: center;
+    text-shadow: 5px 5px 5px #383838;
+    box-shadow: 5px 5px 5px #383838;
+}
+a {
+    display: block;
+    position: absolute;
+    background-color: #bbce00;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #383838;
+    text-transform: uppercase;
+    padding: 10px 20px 15px;
+    transform: rotate(-5deg);
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #383838;
+    text-align: right;
+    &:hover {
+        color: #6f3700;
+        text-shadow: 5px 5px 5px #000;
+    }
+    &:first-of-type {
+        top: 20px;
+        width: 20%;
+    }
+    &:nth-of-type(2) {
+        top: 80px;
+        width: 25%;
+    }
+    &:nth-of-type(3) {
+        top: 140px;
+        width: 30%;
+    }
+    &:nth-of-type(4) {
+        top: 200px;
+        width: 35%;
+    }
+}
+}
+.unit{
+    position: relative; 
+    border-top: 1px solid rgba(176, 93, 0, 0); 
+    background: rgba(176, 93, 0, 0.7);
+    img {
+        position: absolute;
+        &:first-of-type {
+            bottom: 0px;
+            right: 130px;
+        }
+        &:last-of-type {
+            bottom: 0;
+            right: 30px;
+        }
+    }
+.about {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #6f3700;
+    width: 101%;
+    transform-origin: top left;
+    transform: rotate(-5deg);
+    box-shadow: 5px 5px 5px #000000;
+    h3 {
+        font-family: 'HelveticaLTStd';
+        font-size: 23px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-shadow: 5px 5px 5px #000000;    
+    }
+}
+}
+.content {
+    background-color: #ffffff;
+    width: 90%;
+    margin: 40px auto 0;
+    display: flex;
+    .text {
+        padding-bottom: 60px;
+    &:first-of-type {
+        margin-top: 30px;
+        padding-left: 35px;
+        padding-right: 20px;
+    }  
+    &:nth-of-type(2) {
+        margin-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+    &:last-of-type {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+        h4 {
+            font-family: 'HelveticaLTStd';
+            font-size: 10px;
+            font-weight: bold;
+            color: #6f3700;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+        p {
+            font-family: 'Tahoma';
+            font-size: 10px;
+            color: #000;
+            margin-bottom: 20px;
+            a {
+                color: #6f3700;
+            }           
+        }
+    }
+}
+footer {
+    background: rgba(176, 93, 0, 0.7);
+    padding-left: 75px;
+    padding-top: 10px;
+    min-height: 65px;
+    a {
+        font-family: 'HelveticaLTStd';
+        font-size: 14px;
+        font-weight: bold;
+        color: #ffffff;
+    text-transform: capitalize;
+    text-decoration: none; 
+    padding-right: 5px;
+    &::after {
+        content: "";
+        border-left: 1px solid #ffffff;
+        margin-left: 5px;
+    }
+}
+span {
+    display: block;
+    font-family: 'Tahoma';
+    font-size: 10px;
+    color: #ffffff;
+text-transform: capitalize;
+margin-top: 20px;
+}
+}
